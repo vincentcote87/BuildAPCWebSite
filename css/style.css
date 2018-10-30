@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400, 800');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#homePage {
+    overflow: hidden;
+}
+
+/* grid */
+
+.gridParent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+.navigation {
+    grid-column: 1;
+}
+
+.logoBig {
+    grid-column: 1;
+}
+
+/* nav */
+
+.mainNav {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.mainNav ul li {
+    display: grid;
+    align-items: start;
+    list-style: none;
+    display: inline-grid;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.mainNav ul li a {
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: .875em;
+    text-transform: uppercase;
+    padding-right: 5px;
+    display: inline-block;
+
+}
+
+.mainNav ul li:not(:first-child) a {
+    color: #F94F57;
+    border-bottom: solid 1px #F94F57;
+    border-right: solid 1px #F94F57;
+}
+
+.mainNav ul li:first-child a {
+    padding: 0;
+    color: white;
+}
+
+.mainNav ul li:not(:first-child) a:hover {
+    border-bottom: solid 1px blueviolet;
+    border-right: solid 1px blueviolet;
+
+    color: blueviolet;
+}
+
+.landingPage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../imgs/backImg.jpg");
+    background-size: cover;
+    border: solid 55px black
+}
+
+.solidBack {
+    background: rgba(0, 0, 0, .75);
+    transform:
+        skew(-18deg);
+    -webkit-transform:
+        skewX(-18deg);
+}
+
+.solidBack.left {
+    width: 55%;
+    height: 100%;
+    margin-left: -20%;
+    float: left;
+}
+
+.solidBack.right {
+    width: 55%;
+    height: 100%;
+    margin-left: 78%;
+    z-index: 0;
+}
+
+.mainTitle {
+    z-index: 98;
+    padding-left: 55px;
+}
+
+/* typography */
+
+.mainTitle p {
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 8vw;
+    padding: 0;
+    color: white;
+}
+
+.mainTitle a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+.purple {
+    color: blueviolet
+}
+
+.pink {
+    color: #F94F57;
+}
