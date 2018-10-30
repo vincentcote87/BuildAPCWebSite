@@ -5,6 +5,7 @@
 
 .compareList {
     list-style: none;
+    padding: 0;
 }
 
 .price {
@@ -13,7 +14,7 @@
 
 .comparePC {
     background: #5a5a5a;
-    padding-top: 10px;
+    padding: 10px 10px 0 10px;
     border-radius: 10px;
 }
 

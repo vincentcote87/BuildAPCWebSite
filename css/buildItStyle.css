@@ -1,0 +1,31 @@
+/* grid */
+
+.stepNum {
+  grid-column: 3 / span 8;
+}
+
+.stepTitle {
+  grid-column: 3 / span 8;
+}
+
+.step {
+  grid-column: 4 / span 6;
+}
+
+.step1 {
+  display: block;
+}
+
+.step2,
+.step3,
+.step4,
+.step5,
+.step6,
+.step7,
+.step8,
+.step9,
+.step10,
+.step11,
+.step12 {
+  display: none;
+}

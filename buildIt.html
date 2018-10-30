@@ -1,27 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let's Build A PC</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <div class="gridParent">
-      <div class="navigation">
-        <nav class="mainNav">
-          <ul>
-            <li class="logo"><a href="./index.html" style="display: block">
-                <p>Let's <br><span class="purple">Build<br></span> A <span class="pink">PC</span></p>
-              </a></li>
-            <li><a href="whyBuild.html">Why Build</a></li>
-            <li><a href="useType.html">Use Type</a></li>
-            <li><a href="components.html">Components</a></li>
-            <li><a href="buildIt.html" class="active">Building It</a></li>
-            <li><a href="extra.html">Extra Resources</a></li>
-          </ul>
-        </nav>
-      </div>
+  <div class="gridParent">
+    <div class="navigation">
+      <nav class="mainNav">
+        <ul>
+          <li class="logo"><a href="./index.html" style="display: block">
+              <p>Let's <br><span class="purple">Build<br></span> A <span class="pink">PC</span></p>
+            </a></li>
+          <li><a href="whyBuild.html">Why Build</a></li>
+          <li><a href="useType.html">Use Type</a></li>
+          <li><a href="components.html">Components</a></li>
+          <li><a href="buildIt.html" class="active">Building It</a></li>
+          <li><a href="extra.html">Extra Resources</a></li>
+        </ul>
+      </nav>
     </div>
+    <div class="pageTitle">
+      <h1>Build It</h1>
+    </div>
+  </div>
+  <div class="gridParent">
+    <h2 class="stepNum step1" id="step1">Step 1</h2>
+    <h3 class="stepTitle step1">Prep the Motherboard</h3>
+    <p class="step step1">The first thing I do with a new build is “prep” the motherboard, by this I mean install the
+      CPU and
+      its cooler
+      before putting it in the case. To install the CPU simply unlatch the socket holder and remove the plastic
+      protecting guard. Remove the CPU from its package, to handle it simply hold it by the sides, avoid touching the
+      underside with all the pins. Looking at the chip you will see it has notches on some of the sides, this is to
+      make installation easy, line up the notches with the ones on the motherboard and drop it in. You will not have
+      to put pressure, if it doesn’t go in properly take it out and try again. Once the CPU is in its slot on the
+      motherboard close and secure the latch.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step2" id="step2">Step 2</h2>
+    <h3 class="stepTitle step2">Install the memory stick(s)</h3>
+    <p class="step step2">Most standard motherboards come with 2, 4, or 8 slots to install memory (RAM). Depending on
+      the
+      memory configuration you chose (2x4GB sticks, 1x8GB stick, 4x8GB sicks, etc.) your installation may very. When
+      not filling up all the slots (2 ram sticks on a 4 slot motherboard for example) the slots you use will affect RAM
+      speed. The best thing to do is look into the manual for the motherboard to see the optimal configuration. Usually
+      this configuration skips a slot so slot 1 and slot 3 for example. To install simply match the notch in the
+      connection with the ones on your ram slots then push until they click in.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step3" id="step3">Step 3</h2>
+    <h3 class="stepTitle step3">Install the CPU Cooler Bracket</h3>
+    <p class="step step3">In many cases the CPU cooler needs to use the included bracket to mount on the motherboard.
+        Many of these brackets need to access behind the motherboard, this is the reason I like to do this
+        before mounting the motherboard in the case. Some cases offer a cut-out to access this part of the motherboard
+        once mounted but not all. As there are many different types of coolers and brackets I will not cover exactly
+        how to mount this, simply follow the provided instructions and you should be fine.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step4" id="step4">Step 4</h2>
+    <h3 class="stepTitle step4">Apply thermal paste and install the cooler</h3>
+    <p class="step step4">Now that the cooler bracket is installed you are ready to apply the thermal paste. Most
+      thermal paste will come in a syringe like tube, simply apply a pea size amount on the middle of the top part of
+      the CPU, NOT on the pins.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step5" id="step5">Step 5</h2>
+    <h3 class="stepTitle step5">Install the motherboard inside the case</h3>
+    <p class="step step5">It is now almost time to mount the motherboard in the case. Before mounting it you should
+      look at your case fans positions and orientations. A common way to do this is to have all the fans in the front
+      of the case used as air intake and all the fans towards the back/top as exhaust. Doing this allows for cool air
+      to enter at the front and exhaust the hot air out the back. Also if you are using a water cooling block now is
+      the time to decide where you will / can mount the radiator, intake or exhaust generally doesn’t make a huge
+      difference for the radiator. Once all your fans are in place its time to mount the motherboard.<WARNING> Install
+        the IO shield before mounting the motherboard. Lay the case flat on its back and line up the motherboard
+        mounting holes with the ones inside the case. Use your magnetic screwdriver and slowly screw in the mounting
+        screws, don’t overtighten them.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step6" id="step6">Step 6</h2>
+    <h3 class="stepTitle step6">Install the power supply inside the case</h3>
+    <p class="step step6">Look on the back of your case for the big square cut-out to find the location of your power
+      supply, most new cases have it on the bottom but some on top. Route the power supply’s cables inside the case
+      from the cut-out followed by the power supply itself, the switch should face the outside of the case. Add the
+      four mounting screws and your done. </p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step7" id="step7">Step 7</h2>
+    <h3 class="stepTitle step7">Mount the hard drives in their bay</h3>
+    <p class="step step7">All cases will over hard drive bays, most of them will also offer a removable tray. Match the
+      mounting holes on the trays with the ones on your hard drive / SSD and secure them. Once on the trays slide /
+      screw in the trays back in their position. <WARNING> Be mindful of where the connections are on the drive so that
+        they are still accessible once mounted. All drives need a SATA connection and power from the power supply, the
+        connections have unique size and a notch to prevent improper installation. Match these notches and plug in the
+        power and SATA cable.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step8" id="step8">Step 8</h2>
+    <h3 class="stepTitle step8">Plug in remaining components</h3>
+    <p class="step step8">Now it is time to start routing all the cables to their final destinations. You should have
+      fan connectors, SATA connector(s), case connectors, and power connectors at the minimum. Look at your
+      motherboards manual for the locations of all the connections (The case connectors are the cables that come
+      attached to your case to control the power button, usb, headphone jack, etc.). For the case fans, route the
+      cables to their closest input pin on the motherboard and plug them in, use a splitter if you have more fans than
+      connections. Follow the labels on the case connectors and match them to the motherboard manual, same with SATA.
+      Now all you need to add is power, there should be a CPU 8 pin connector towards the top left corner and a 24 pin
+      connector on the right side, connect these from your power supply (pin size and location may vary, check manual).</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step9" id="step9">Step 9</h2>
+    <h3 class="stepTitle step9">Cable management</h3>
+    <p class="step step9">Some people might say this is optional. The idea in this step is simply to tuck away all
+      remaining cables, tie them down to the case and simply make your new system look good.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step10" id="step10">Step 10</h2>
+    <h3 class="stepTitle step10">Install GPU / other misc cards</h3>
+    <p class="step step10">Almost done!! It is now time to install the graphics card and any other miscellaneous cards
+      (like a WiFi card for example). If you don’t have any of these parts skip this step. The graphic card will almost
+      always go in the first (top) PCIE slot. <WARNING> Before trying to insert the card into the slot make sure the
+        back cover is removed from the case. Simply slid in the card into the slot until it clicks, that’s it!</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step11" id="step11">Step 11</h2>
+    <h3 class="stepTitle step11">Clean up and post</h3>
+    <p class="step step11">Sit the computer right side up and slide / screw on the side panels. The back panel may be a
+      little harder to put on as this is usually where many extra cables get tucked away. Now plug in the power,
+      screen, keyboard, and mouse. Cross your fingers and push the power button. Now you will probably have a mini
+      panick attack as nothing happened, take a deep breath and check that the switch on the power supply is on. Repeat
+      and exhale when it actually comes alive.</p>
+  </div>
+
+  <div class="gridParent">
+    <h2 class="stepNum step12" id="step12">Step 12</h2>
+    <h3 class="stepTitle step12">Pat yourself on the back</h3>
+    <p class="step step12">You did it, you built your first PC! Install your desired operating system and enjoy!</p>
+  </div>
+  <button onclick="getCurrent();">Next</button>
+  <script src="./script/fade.js"></script>
 </body>
+
 </html>
