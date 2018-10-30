@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo:400, 800');
+@import url(./whyBuildStyle.css);
+@import url(./useTypeStyle.css);
+@import url('https://fonts.googleapis.com/css?family=Heebo:400, 800|Montserrat');
 
 * {
     box-sizing: border-box;
@@ -10,6 +12,7 @@ html, body {
 
 body {
     margin: 0;
+    background: #1a1a1a;
 }
 
 #homePage {
@@ -20,24 +23,34 @@ body {
 
 .gridParent {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-gap: 30px;
 }
 
 .navigation {
-    grid-column: 1;
+    grid-column: 1 / -1;
 }
 
 .logoBig {
     grid-column: 1;
 }
 
+.pageTitle {
+    grid-column: 2 / span 7;
+}
+
+
+
 /* nav */
 
 .mainNav {
     position: absolute;
+    top: 0;
+    left: 0;
     z-index: 99;
-    width: 100%;
+    /* width: 80%; */
+    /* background: black; */
+    padding: 0 50px 8px 0;
 }
 
 .mainNav ul li {
@@ -59,6 +72,10 @@ body {
 
 }
 
+.mainNav ul li a p {
+    margin: 0;
+}
+
 .mainNav ul li:not(:first-child) a {
     color: #F94F57;
     border-bottom: solid 1px #F94F57;
@@ -70,10 +87,15 @@ body {
     color: white;
 }
 
-.mainNav ul li:not(:first-child) a:hover {
+.mainNav ul li:not(:first-child) a:hover, {
     border-bottom: solid 1px blueviolet;
     border-right: solid 1px blueviolet;
+    color: blueviolet;
+}
 
+.mainNav ul li a.active {
+    border-bottom: solid 1px blueviolet;
+    border-right: solid 1px blueviolet;
     color: blueviolet;
 }
 
@@ -88,7 +110,7 @@ body {
     height: 100%;
     background-image: url("../imgs/backImg.jpg");
     background-size: cover;
-    border: solid 55px black
+    border: solid 64px #000000;
 }
 
 .solidBack {
@@ -134,7 +156,29 @@ body {
     color: blueviolet;
 }
 
+h1 {
+    font-family: 'Heebo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3vw;
+    border-bottom: solid 3px blueviolet;
+    color: blueviolet;
+    margin: 30px 0;
+    padding: 0;
+}
 
+h3 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+p, .compareList li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25em;
+    color: #ffffff;
+
+}
 .purple {
     color: blueviolet
 }

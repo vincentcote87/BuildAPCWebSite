@@ -1,0 +1,67 @@
+.pcSmallImg {
+    max-width: 120px;
+    border-radius: 50%;
+}
+
+.compareList {
+    list-style: none;
+}
+
+.price {
+    font-size: 1.5em;
+}
+
+.comparePC {
+    background: #5a5a5a;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.highlight {
+    font-size: 1.75em;
+}
+
+.nextArrow {
+    width: 100px;
+}
+
+.cls-1, .cls-2 {
+    fill: none;
+    stroke: #ffffff;
+    stroke-miterlimit: 10;
+    stroke-width: 8px;
+}
+
+.cls-2 {
+    stroke-linecap: round;
+}
+
+.nextArrow a:hover .cls-1, .nextArrow a:hover .cls-2 {
+    stroke: #5a5a5a;
+}
+
+/* grid */
+
+.whyBuildText {
+    grid-column: 3 / span 8;
+}
+
+.prebuilt {
+    grid-column: 3 / span 3;
+    text-align: center;
+}
+
+.customBuild {
+    grid-column: 7 / span 3;
+    text-align: center;
+}
+
+.nextPageText {
+    grid-column: 3 /  10;
+    text-align: right;
+}
+
+.nextArrow {
+    grid-column: 10;
+    margin: 10px 0;
+}

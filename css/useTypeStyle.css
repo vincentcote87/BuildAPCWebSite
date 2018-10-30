@@ -1,0 +1,31 @@
+.userTypeIcon {
+    width: 50%;
+}
+
+/* grid */
+
+.useTypeText {
+    grid-column: 3 / span 8;
+}
+
+.considerations {
+    grid-column: 3 / span 6;
+    list-style: none;
+}
+
+.userType {
+    text-align: center;
+    padding: 0 25px;
+}
+
+.basic {
+    grid-column: 3 / 5;
+}
+
+.gamer {
+    grid-column: 5 / 7;
+}
+
+.professional {
+    grid-column: 7 / 9;
+}
