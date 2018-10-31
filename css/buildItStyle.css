@@ -1,5 +1,21 @@
-/* grid */
+.stepsNav ul li {
+  display: inline-block;
+  font-family: 'Audiowide', sans-serif;
+  font-size: 3em;
+  color: #ffffff;
+  padding: 0 20px;
+  cursor: pointer;
+}
 
+.stepsNav ul li:hover {
+  color: #5a5a5a;
+}
+
+.currentStep {
+  border-bottom: solid 3px #F94F57;
+}
+
+/* grid */
 .stepNum {
   grid-column: 3 / span 8;
 }
@@ -28,4 +44,9 @@
 .step11,
 .step12 {
   display: none;
+}
+
+.stepsList {
+  grid-column: 1 / -1;
+  text-align: center;
 }

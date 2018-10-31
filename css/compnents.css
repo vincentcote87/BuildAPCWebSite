@@ -1,8 +1,12 @@
-.componentsImg {
-  margin: 0 auto;
-  width: 35%;
+.compImg {
+  width: 100%;
+  border-radius: 50%;
 }
 
-#computerSVG {
-  width: 100%;
+.compImg {
+  grid-column: 3 / span 1;
+}
+
+.compText {
+  grid-column: span 6;
 }

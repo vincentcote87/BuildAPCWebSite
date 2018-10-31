@@ -1,17 +1,10 @@
 .userTypeIcon {
-    width: 90px;
-    /* min-width: 90px; */
+    width: 120px;
 }
 
 /* grid */
-
 .useTypeText {
     grid-column: 3 / span 8;
-}
-
-.considerations {
-    grid-column: 3 / span 6;
-    list-style: none;
 }
 
 .userType {
@@ -20,13 +13,13 @@
 }
 
 .basic {
-    grid-column: 2 / span 3;
+    grid-column: 3 / span 2;
 }
 
 .gamer {
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 .professional {
-    grid-column: span 3;
+    grid-column: span 2;
 }

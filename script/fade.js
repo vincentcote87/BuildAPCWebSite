@@ -1,31 +1,50 @@
-let currentPosition = 1;
-const TOTAL_POS = 12;
-
+let current = 0;
+const t = 1000;
 const POS = ['step1', 'step2','step3', 'step4', 'step5', 'step6',
              'step7', 'step8', 'step9', 'step10', 'step11', 'step12',
             ];
 
-function getNext() {
-  if (currentPosition <= 12)
-    return currentPosition;
-}
-
-function fade(fout, fin) {
-  $(fout).fadeOut(1000);
+function fadeTo(step) {
+  $('.'+ POS[current]).fadeOut(t);
+  removeHighlight();
+  current = step;
   setTimeout(function () {
-    $(fin).fadeIn(1000);
-  }, 1000);
+    $('.'+ POS[current]).fadeIn(t);
+  }, t);
+  highlight();
 }
 
-function getCurrent() {
-  for (let i = 0; i < POS.length; ++i) {
-    let style = getComputedStyle(document.getElementById(POS[i]));
-    if (style.display == 'block')
-      return POS[i];
-    else
-      return 'NotFound';
+function fadeNext() {
+  if (current < 11) {
+    $('.'+ POS[current]).fadeOut(t);
+    removeHighlight();
+    current++;
+    setTimeout(function () {
+      $('.'+ POS[current]).fadeIn(t);
+    }, t);
+    highlight();
   }
 }
 
-console.log(getCurrent());
+function fadePrev() {
+  if (current > 0) {
+    $('.'+ POS[current]).fadeOut(t);
+    removeHighlight();
+    current--;
+    setTimeout(function () {
+      $('.'+ POS[current]).fadeIn(t);
+    }, t);
+    highlight();
+  }
+}
+
+function highlight() {
+  let position = current + 2;
+  $('.stepsList ul li:nth-child('+ position +')').addClass("currentStep");
+}
+
+function removeHighlight() {
+  let position = current + 2;
+  $('.stepsList ul li:nth-child('+ position +')').removeClass("currentStep");
+}
 

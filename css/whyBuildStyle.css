@@ -41,12 +41,6 @@
     stroke: #5a5a5a;
 }
 
-/* grid */
-
-.whyBuildText {
-    grid-column: 3 / span 8;
-}
-
 .prebuilt {
     grid-column: 3 / span 3;
     text-align: center;
@@ -55,14 +49,4 @@
 .customBuild {
     grid-column: 7 / span 3;
     text-align: center;
-}
-
-.nextPageText {
-    grid-column: 3 /  10;
-    text-align: right;
-}
-
-.nextArrow {
-    grid-column: 10;
-    margin: 10px 0;
 }

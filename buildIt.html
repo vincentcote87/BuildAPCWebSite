@@ -21,7 +21,6 @@
           <li><a href="useType.html">Use Type</a></li>
           <li><a href="components.html">Components</a></li>
           <li><a href="buildIt.html" class="active">Building It</a></li>
-          <li><a href="extra.html">Extra Resources</a></li>
         </ul>
       </nav>
     </div>
@@ -81,7 +80,7 @@
       of the case used as air intake and all the fans towards the back/top as exhaust. Doing this allows for cool air
       to enter at the front and exhaust the hot air out the back. Also if you are using a water cooling block now is
       the time to decide where you will / can mount the radiator, intake or exhaust generally doesn’t make a huge
-      difference for the radiator. Once all your fans are in place its time to mount the motherboard.<WARNING> Install
+      difference for the radiator. Once all your fans are in place its time to mount the motherboard. <span class="highlight pink">!</span> Install
         the IO shield before mounting the motherboard. Lay the case flat on its back and line up the motherboard
         mounting holes with the ones inside the case. Use your magnetic screwdriver and slowly screw in the mounting
         screws, don’t overtighten them.</p>
@@ -101,7 +100,7 @@
     <h3 class="stepTitle step7">Mount the hard drives in their bay</h3>
     <p class="step step7">All cases will over hard drive bays, most of them will also offer a removable tray. Match the
       mounting holes on the trays with the ones on your hard drive / SSD and secure them. Once on the trays slide /
-      screw in the trays back in their position. <WARNING> Be mindful of where the connections are on the drive so that
+      screw in the trays back in their position. <span class="highlight pink">!</span> Be mindful of where the connections are on the drive so that
         they are still accessible once mounted. All drives need a SATA connection and power from the power supply, the
         connections have unique size and a notch to prevent improper installation. Match these notches and plug in the
         power and SATA cable.</p>
@@ -132,7 +131,7 @@
     <h3 class="stepTitle step10">Install GPU / other misc cards</h3>
     <p class="step step10">Almost done!! It is now time to install the graphics card and any other miscellaneous cards
       (like a WiFi card for example). If you don’t have any of these parts skip this step. The graphic card will almost
-      always go in the first (top) PCIE slot. <WARNING> Before trying to insert the card into the slot make sure the
+      always go in the first (top) PCIE slot. <span class="highlight pink">!</span> Before trying to insert the card into the slot make sure the
         back cover is removed from the case. Simply slid in the card into the slot until it clicks, that’s it!</p>
   </div>
 
@@ -151,7 +150,28 @@
     <h3 class="stepTitle step12">Pat yourself on the back</h3>
     <p class="step step12">You did it, you built your first PC! Install your desired operating system and enjoy!</p>
   </div>
-  <button onclick="getCurrent();">Next</button>
+
+  <div class="stepsNav gridParent">
+    <div class="stepsList">
+        <ul>
+            <li onclick="fadePrev();">Prev</li>
+            <li onclick="fadeTo(0);" class="currentStep">1</li>
+            <li onclick="fadeTo(1);">2</li>
+            <li onclick="fadeTo(2);">3</li>
+            <li onclick="fadeTo(3);">4</li>
+            <li onclick="fadeTo(4);">5</li>
+            <li onclick="fadeTo(5);">6</li>
+            <li onclick="fadeTo(6);">7</li>
+            <li onclick="fadeTo(7);">8</li>
+            <li onclick="fadeTo(8);">9</li>
+            <li onclick="fadeTo(9);">10</li>
+            <li onclick="fadeTo(10);">11</li>
+            <li onclick="fadeTo(11);">12</li>
+            <li onclick="fadeNext();">Next</li>
+          </ul>
+    </div>
+
+  </div>
   <script src="./script/fade.js"></script>
 </body>
 
